@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lulas Sieg in Brasilien – Leseverstehen und Sprache (A2)</title>
+<style>
+:root{--ink:#18324b;--blue:#ddecff;--blue2:#2675bd;--yellow:#ffd95a;--paper:#fff;--bg:#eef2f6;--line:#cbd5e1;--muted:#526174;--good:#176b43;--bad:#a62b2b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#202a35;font:16px/1.55 Arial,Helvetica,sans-serif}
+main{max-width:980px;margin:24px auto;padding:34px;background:var(--paper);box-shadow:0 3px 18px #19334b12}
+header{border-bottom:3px solid var(--ink);padding-bottom:18px;margin-bottom:24px}
+.kicker{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:bold}
+h1,h2,h3{color:var(--ink);line-height:1.25}h1{font-size:1.8rem;margin:.3rem 0 .5rem}h2{font-size:1.25rem;margin:0 0 12px}h3{font-size:1rem;margin:18px 0 8px}
+.meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}.meta label{flex:1;min-width:160px}
+input[type=text],textarea,select{font:inherit;border:1px solid #9aa9b8;border-radius:5px;padding:8px 10px;background:#fff;color:#202a35;max-width:100%}
+.meta input{width:100%;margin-top:4px}
+.intro{color:var(--muted);margin:0}
+.panel{border:1px solid var(--line);border-radius:8px;padding:18px;margin:20px 0;background:#fff}
+.article{background:#f8fafc;border-left:5px solid var(--ink)}
+.article h2{margin-bottom:4px}.source{font-size:.85rem;color:var(--muted);margin:0 0 14px}
+.qa{margin:14px 0}.speaker{font-weight:bold;color:#234e78;margin:8px 0 2px}.expert{color:#17644e}
+.article p{margin:4px 0 8px}
+.taskhead{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}.num{background:var(--yellow);color:#202a35;font-weight:bold;border-radius:5px;padding:4px 9px;white-space:nowrap}
+.instruction{margin:0 0 14px;color:#334155}
+.question{padding:12px 0;border-top:1px solid #e2e8f0}.question:first-of-type{border-top:0}
+.question p{margin:0 0 8px}.choices{display:flex;gap:14px;flex-wrap:wrap}.choices label{display:inline-flex;gap:6px;align-items:center}
+select{min-width:180px}.feedback{font-size:.92rem;margin-top:6px;min-height:1.2em}.correct{color:var(--good);font-weight:bold}.incorrect{color:var(--bad);font-weight:bold}
+.matchrow{display:grid;grid-template-columns:minmax(180px,1fr) minmax(220px,1.5fr);gap:12px;align-items:center;padding:8px 0;border-top:1px solid #e2e8f0}.matchrow:first-of-type{border-top:0}
+.matchrow strong{color:var(--ink)}
+.tip{background:#fff9df;border-left:4px solid var(--yellow);padding:12px 14px;margin:12px 0;border-radius:4px}
+.example{color:var(--muted);font-size:.95rem}
+textarea{width:100%;min-height:110px;resize:vertical}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+button{border:0;border-radius:6px;padding:11px 16px;font:inherit;font-weight:bold;cursor:pointer}
+.primary{background:var(--ink);color:white}.secondary{background:var(--blue);color:var(--ink)}button:hover{filter:brightness(.96)}
+#overall{font-weight:bold;padding:12px;border-radius:6px;background:#f1f5f9}
+.small{font-size:.88rem;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:.85rem}
+@media(max-width:650px){main{margin:0;padding:16px;box-shadow:none}.matchrow{grid-template-columns:1fr;gap:4px}.meta{display:block}.meta label{display:block;margin:10px 0}h1{font-size:1.5rem}}
+@media print{body{background:white;font-size:11pt}main{margin:0;max-width:none;padding:0;box-shadow:none}.actions,.no-print,button{display:none!important}.panel{break-inside:avoid;border-color:#999;padding:12px}.article{break-inside:auto}input,select,textarea{border:0;border-bottom:1px solid #777;border-radius:0;padding:2px;background:transparent}textarea{min-height:65px}.feedback{display:none}header{margin-bottom:14px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="kicker">Deutsch · Niveau A2 · Lesen, Wortschatz und Grammatik</div>
+  <h1>Lulas Sieg in Brasilien</h1>
+  <p class="intro">Den Text verstehen, wichtige Ausdrücke erschliessen und Vergleiche bilden.</p>
+  <div class="meta">
+    <label>Name <input type="text" id="student" autocomplete="name" placeholder="Name"></label>
+    <label>Datum <input type="text" id="date" placeholder="TT.MM.JJJJ"></label>
+    <label>Kurs <input type="text" id="course" placeholder="Kurs"></label>
+  </div>
+</header>
+
+<section class="panel article">
+<h2>«Viele hatten Angst, dass Bolsonaro die Demokratie zerstört»</h2>
+<p class="source">Interview mit dem deutsch-brasilianischen Politikwissenschafter Oliver Stuenkel · Quelle laut Vorlage: SRF News, Tagesgespräch, 26. Oktober 2026</p>
+<div class="qa">
+<div class="speaker">SRF News:</div>
+<p>Der linke Lula da Silva gewinnt die Wahl, obwohl er im ersten Wahlgang noch deutlich zurücklag. Wie kam es zu dieser Aufholjagd?</p>
+<div class="speaker expert">Oliver Stuenkel:</div>
+<p>Das ist in der Tat eine grosse Überraschung. Entscheidend war die traditionelle Mobilisierung der Linken in den letzten drei Wochen. Unzählige Freiwillige haben Kampagnenarbeit geleistet, mit Nachbarn gesprochen und Menschen auf der Strasse angesprochen. So konnte Lula über zehn Millionen Stimmen mehr als im ersten Wahlgang gewinnen.</p>
+</div>
+<div class="qa">
+<div class="speaker">SRF News:</div>
+<p>Flavio Bolsonaro hat die Wahl verloren, aber fast die Hälfte der Stimmen erhalten. Wie erklären Sie sich diese enorme Stärke des Bolsonarismus?</p>
+<div class="speaker expert">Oliver Stuenkel:</div>
+<p>Populistische und auch autoritäre Bewegungen finden in Teilen der brasilianischen Bevölkerung Anklang, ich würde sagen bei 15 bis 20 Prozent. Das erklärt die Stärke dieser Bewegung. Hinzu kommt, dass Bolsonaros Vater Jair zwar wegen eines Putschversuchs zu 27 Jahren Haft verurteilt wurde, sein Sohn Flavio aber dennoch fast die Wahl gewonnen hätte. Dass ein Kandidat, dessen Hauptvorschlag es ist, seinen Vater aus dem Gefängnis zu befreien, so stark abschneidet, ist besorgniserregend.</p>
+</div>
+<div class="qa">
+<div class="speaker">SRF News:</div>
+<p>Und doch hat es für Bolsonaro nicht gereicht. Wo liegt die entscheidende Schwäche dieser Bewegung?</p>
+<div class="speaker expert">Oliver Stuenkel:</div>
+<p>Ein moderater konservativer Kandidat hätte diese Wahl wahrscheinlich gewonnen. Doch viele moderate Wähler hatten Angst, dass Bolsonaro die brasilianische Demokratie zerstört, und erinnerten sich an den versuchten Staatsstreich seines Vaters vor vier Jahren. Deshalb haben sie widerwillig für Lula gestimmt. Lulas Sieg war also weniger eine Wahl für ihn als eine Wahl gegen Bolsonaro.</p>
+</div>
+<div class="qa">
+<div class="speaker">SRF News:</div>
+<p>Lula steht nun vor seiner vierten Amtszeit. Doch die Ausgangslage ist schwierig.</p>
+<div class="speaker expert">Oliver Stuenkel:</div>
+<p>Ja, für Lula wird es extrem schwierig. Im Parlament haben rechte Parteien massiv zugelegt, die Bolsonaro-Partei ist die stärkste Kraft. Er wird kaum Gesetzesvorschläge durchbringen oder wichtige Richterposten besetzen können. Neue Präsidenten haben normalerweise ein paar Monate Schonfrist. Diese Flitterwochen wird Lula nicht haben. Er steht von Anfang an unter massivem Druck.</p>
+</div>
+<div class="qa">
+<div class="speaker">SRF News:</div>
+<p>Viele in Europa verbinden Brasilien mit dem Amazonas-Regenwald, der Auswirkungen auf das Weltklima hat. Was bedeutet Lulas Sieg für den Amazonas?</p>
+<div class="speaker expert">Oliver Stuenkel:</div>
+<p>In Lulas letzter Amtszeit ist die Abholzung bereits stark gesunken. Das wird auch weiterhin eine Priorität sein. Brasilien weiss, dass zum Beispiel Handelsabkommen mit Europa nur dann eine Zukunft haben, wenn das Land beim Schutz des Amazonas Fortschritte macht. Ein Sieg Bolsonaros hätte dieses historische Abkommen gefährdet. Lula weiss, wie wichtig dieses Thema für das weltweite Ansehen Brasiliens ist.</p>
+</div>
+<p class="small"><strong>Hinweis zur Quelle:</strong> Vor dem Abdruck in einem Buch bitte Datum, Originalwortlaut und Nutzungsrechte der Quelle prüfen.</p>
+</section>
+
+<section class="panel" id="task1">
+<div class="taskhead"><span class="num">Aufgabe 1</span><h2>Leseverstehen: Aussagen prüfen</h2></div>
+<p class="instruction">Lesen Sie die Aussagen. Wählen Sie <em>richtig</em> oder <em>falsch</em>. Suchen Sie danach im Text eine Stelle, die Ihre Antwort belegt.</p>
+<div class="question" data-q="q1" data-answer="r">
+<p><strong>1.</strong> Freiwillige haben mit Nachbarn gesprochen und Menschen auf der Strasse angesprochen.</p>
+<div class="choices"><label><input type="radio" name="q1" value="r"> Richtig</label><label><input type="radio" name="q1" value="f"> Falsch</label></div>
+<label class="small">Textstelle oder Stichwort (optional)<br><input type="text" class="evidence" placeholder="z. B. Freiwillige ..." style="width:100%"></label><div class="feedback"></div>
+</div>
+<div class="question" data-q="q2" data-answer="f">
+<p><strong>2.</strong> Flavio Bolsonaro hat die Wahl mit grossem Abstand gewonnen.</p>
+<div class="choices"><label><input type="radio" name="q2" value="r"> Richtig</label><label><input type="radio" name="q2" value="f"> Falsch</label></div>
+<label class="small">Textstelle oder Stichwort (optional)<br><input type="text" class="evidence" placeholder="z. B. hat die Wahl ..." style="width:100%"></label><div class="feedback"></div>
+</div>
+<div class="question" data-q="q3" data-answer="f">
+<p><strong>3.</strong> Laut Stuenkel haben viele moderate Wähler aus Begeisterung für Lula gestimmt.</p>
+<div class="choices"><label><input type="radio" name="q3" value="r"> Richtig</label><label><input type="radio" name="q3" value="f"> Falsch</label></div>
+<label class="small">Textstelle oder Stichwort (optional)<br><input type="text" class="evidence" placeholder="z. B. widerwillig ..." style="width:100%"></label><div class="feedback"></div>
+</div>
+<div class="question" data-q="q4" data-answer="r">
+<p><strong>4.</strong> Rechte Parteien haben im Parlament an Stärke gewonnen.</p>
+<div class="choices"><label><input type="radio" name="q4" value="r"> Richtig</label><label><input type="radio" name="q4" value="f"> Falsch</label></div>
+<label class="small">Textstelle oder Stichwort (optional)<br><input type="text" class="evidence" placeholder="z. B. massiv ..." style="width:100%"></label><div class="feedback"></div>
+</div>
+<div class="question" data-q="q5" data-answer="r">
+<p><strong>5.</strong> Im Text wird erwartet, dass der Schutz des Amazonas weiterhin wichtig sein wird.</p>
+<div class="choices"><label><input type="radio" name="q5" value="r"> Richtig</label><label><input type="radio" name="q5" value="f"> Falsch</label></div>
+<label class="small">Textstelle oder Stichwort (optional)<br><input type="text" class="evidence" placeholder="z. B. Priorität ..." style="width:100%"></label><div class="feedback"></div>
+</div>
+</section>
+
+<section class="panel" id="task2">
+<div class="taskhead"><span class="num">Aufgabe 2</span><h2>Wortschatz im Kontext</h2></div>
+<p class="instruction">Ordnen Sie jedem Ausdruck die passende Erklärung zu. Jede Erklärung wird einmal verwendet.</p>
+<div id="matches"></div><div id="matchFeedback" class="feedback"></div>
+</section>
+
+<section class="panel" id="task3">
+<div class="taskhead"><span class="num">Aufgabe 3</span><h2>Ausdrücke im Text finden</h2></div>
+<p class="instruction">Finden Sie im Interview den Ausdruck, der zur Erklärung passt. Schreiben Sie das Wort oder den Ausdruck ab. Achten Sie auf die Form im Text.</p>
+<div class="question" data-text-answer="freiwillige"><p><strong>1.</strong> Menschen, die ohne Bezahlung helfen: <input type="text" data-text="freiwillige" aria-label="Antwort 1"></p><div class="feedback"></div></div>
+<div class="question" data-text-answer="widerwillig"><p><strong>2.</strong> Etwas tun, obwohl man es eigentlich nicht möchte: <input type="text" data-text="widerwillig" aria-label="Antwort 2"></p><div class="feedback"></div></div>
+<div class="question" data-text-answer="Schonfrist"><p><strong>3.</strong> Eine erste Zeit im Amt, in der neue Präsidenten normalerweise weniger Kritik bekommen: <input type="text" data-text="Schonfrist" aria-label="Antwort 3"></p><div class="feedback"></div></div>
+<div class="question" data-text-answer="Abholzung"><p><strong>4.</strong> Das Fällen vieler Bäume: <input type="text" data-text="Abholzung" aria-label="Antwort 4"></p><div class="feedback"></div></div>
+<div class="question" data-text-answer="besorgniserregend"><p><strong>5.</strong> So, dass es Sorgen für die Zukunft macht: <input type="text" data-text="besorgniserregend" aria-label="Antwort 5"></p><div class="feedback"></div></div>
+</section>
+
+<section class="panel" id="task4">
+<div class="taskhead"><span class="num">Aufgabe 4</span><h2>Grammatik: Komparativ und Superlativ</h2></div>
+<div class="tip"><strong>Merke:</strong><br>Komparativ: <em>Adjektiv + -er + als</em> → <em>schwieriger als</em>.<br>Superlativ vor einem Nomen: <em>am / der, die, das + Adjektiv mit -st-</em> → <em>die stärkste Kraft</em>.<br>Bei manchen Adjektiven verändert sich der Vokal: <em>gross – grösser – am grössten</em> (Schweizer Rechtschreibung).</div>
+<p class="instruction">Ergänzen Sie die Lücken. Verwenden Sie die Wörter in Klammern und achten Sie auf die Satzform.</p>
+<div class="question" data-text-answer="mehr"><p><strong>1.</strong> Lula erhielt im zweiten Wahlgang über zehn Millionen Stimmen <input type="text" data-text="mehr" aria-label="Grammatik Antwort 1"> als im ersten. <span class="example">(viel)</span></p><div class="feedback"></div></div>
+<div class="question" data-text-answer="stärkste"><p><strong>2.</strong> Die Bolsonaro-Partei ist die <input type="text" data-text="stärkste" aria-label="Grammatik Antwort 2"> Kraft im Parlament. <span class="example">(stark)</span></p><div class="feedback"></div></div>
+<div class="question" data-text-answer="schwieriger"><p><strong>3.</strong> Die politische Lage ist heute <input type="text" data-text="schwieriger" aria-label="Grammatik Antwort 3"> als früher. <span class="example">(schwierig)</span></p><div class="feedback"></div></div>
+<div class="question" data-text-answer="grösser"><p><strong>4.</strong> Der Amazonas ist für das Weltklima von <input type="text" data-text="grösser" aria-label="Grammatik Antwort 4"> Bedeutung als ein einzelner Wald in einer Stadt. <span class="example">(gross)</span></p><div class="feedback"></div></div>
+<p class="small">Bei Aufgabe 4 wird die grammatische Form geprüft; der Vergleich ist ein Übungssatz und kein Zitat aus dem Interview.</p>
+</section>
+
+<section class="panel" id="task5">
+<div class="taskhead"><span class="num">Aufgabe 5</span><h2>Ihre Meinung begründen</h2></div>
+<p class="instruction">Stuenkel meint, viele moderate Wähler hätten Lula gewählt, weil sie Angst vor Bolsonaro hatten. Was denken Sie? Schreiben Sie 3–5 Sätze. Sie dürfen zustimmen, widersprechen oder eine andere Erklärung geben. Begründen Sie Ihre Meinung mit mindestens einem Hinweis aus dem Text.</p>
+<div class="tip"><strong>Redemittel (optional):</strong><br>Ich denke, dass … · Meiner Meinung nach … · Im Text steht, dass … · Ein Grund dafür könnte sein, dass … · Ich stimme zu / Ich stimme nicht ganz zu, weil …</div>
+<textarea id="writing" placeholder="Schreiben Sie hier Ihre Antwort …"></textarea>
+<p class="small">Die Schreibaufgabe wird nicht automatisch bewertet. Prüfen Sie: Habe ich meine Meinung genannt? Habe ich einen Grund erklärt? Habe ich auf den Text Bezug genommen?</p>
+</section>
+
+<div class="actions no-print">
+<button class="primary" type="button" onclick="checkAll()">Antworten prüfen</button>
+<button class="secondary" type="button" onclick="window.print()">Drucken / als PDF speichern</button>
+<button class="secondary" type="button" onclick="saveAnswers()">Antworten speichern</button>
+<button class="secondary" type="button" onclick="resetAnswers()">Neu beginnen</button>
+</div>
+<div id="overall" role="status" aria-live="polite">Füllen Sie die Aufgaben aus und klicken Sie auf „Antworten prüfen“.</div>
+<p class="small no-print">Die automatische Korrektur prüft objektive Antworten. Bei Aufgabe 1 sind die Textbelege eine Lernhilfe und werden nicht automatisch bewertet. Die Schreibaufgabe bleibt offen.</p>
+<footer>Arbeitsblatt · Leseverstehen, Wortschatz und Grammatik · A2</footer>
+</main>
+<script>
+const definitions=[
+ {word:"die Mobilisierung",def:"Viele Menschen aktiv machen, damit sie bei einer politischen Sache mithelfen."},
+ {word:"Anklang finden",def:"Bei einer Gruppe von Menschen Zustimmung bekommen."},
+ {word:"der Staatsstreich",def:"Der Versuch, eine Regierung mit Gewalt und illegal zu stürzen."},
+ {word:"die Schonfrist",def:"Eine erste Zeit, in der jemand noch weniger Kritik bekommt."},
+ {word:"die Abholzung",def:"Das Fällen oder Zerstören vieler Bäume in einem Wald."},
+ {word:"die Kampagnenarbeit",def:"Organisierte politische Arbeit, um Wähler für eine Wahl zu gewinnen."},
+ {word:"besorgniserregend",def:"So, dass es Sorgen für die Zukunft macht."},
+ {word:"widerwillig",def:"Gegen den eigenen Willen; ohne Begeisterung."},
+ {word:"das Handelsabkommen",def:"Ein offizieller Vertrag über Handel zwischen Staaten."},
+ {word:"das Ansehen",def:"Der Ruf, den eine Person oder ein Land bei anderen hat."}
+];
+const order=[6,9,3,0,8,1,7,4,2,5];
+const host=document.getElementById("matches");
+definitions.forEach((item,i)=>{
+ const row=document.createElement("div");row.className="matchrow";
+ const left=document.createElement("strong");left.textContent=(i+1)+". "+item.word;
+ const sel=document.createElement("select");sel.id="m"+i;sel.setAttribute("aria-label","Erklärung zu "+item.word);
+ sel.innerHTML='<option value="">Erklärung wählen …</option>';
+ order.forEach((idx)=>{const o=document.createElement("option");o.value=String(idx);o.textContent=String.fromCharCode(65+idx)+") "+definitions[idx].def;sel.appendChild(o)});
+ row.append(left,sel);host.appendChild(row);
+});
+function norm(s){return (s||"").trim().toLocaleLowerCase("de-DE").replace(/[.!?,;:]/g,"").replace(/\s+/g," ")}
+function checkAll(){
+ let total=0,correct=0;
+ document.querySelectorAll('#task1 .question[data-q]').forEach(q=>{
+  total++;const chosen=q.querySelector('input[type=radio]:checked');const fb=q.querySelector('.feedback');
+  if(!chosen){fb.textContent="Bitte wählen Sie eine Antwort.";fb.className="feedback";return}
+  if(chosen.value===q.dataset.answer){correct++;fb.textContent="Richtig.";fb.className="feedback correct"}
+  else{fb.textContent="Noch nicht richtig. Lesen Sie den entsprechenden Abschnitt noch einmal.";fb.className="feedback incorrect"}
+ });
+ let mc=0,mcTotal=definitions.length;
+ definitions.forEach((d,i)=>{const s=document.getElementById('m'+i);if(s.value!==""&&Number(s.value)===i)mc++;});
+ document.getElementById('matchFeedback').textContent="Richtig zugeordnet: "+mc+" von "+mcTotal+".";
+ document.getElementById('matchFeedback').className="feedback "+(mc===mcTotal?"correct":"incorrect");
+ total+=mcTotal;correct+=mc;
+ document.querySelectorAll('#task3 .question[data-text-answer],#task4 .question[data-text-answer]').forEach(q=>{
+  total++;const inp=q.querySelector('input[data-text]');const fb=q.querySelector('.feedback');
+  if(norm(inp.value)===norm(q.dataset.textAnswer)){correct++;fb.textContent="Richtig.";fb.className="feedback correct"}
+  else if(!inp.value.trim()){fb.textContent="Noch offen.";fb.className="feedback"}
+  else{fb.textContent="Prüfen Sie die Schreibweise und die Form im Satz.";fb.className="feedback incorrect"}
+ });
+ document.getElementById('overall').textContent="Automatisch richtig: "+correct+" von "+total+" objektiven Punkten. Die Textbelege und der freie Text werden nicht automatisch bewertet.";
+ saveAnswers(false);
+}
+function saveAnswers(show=true){
+ const data={};
+ document.querySelectorAll('input,textarea,select').forEach(el=>{if(el.type==="radio"){if(el.checked)data[el.name]=el.value}else if(el.id||el.name)data[el.id||el.name]=el.value});
+ try{localStorage.setItem('lulaA2Worksheet',JSON.stringify(data));if(show)document.getElementById('overall').textContent="Antworten in diesem Browser gespeichert."}catch(e){if(show)document.getElementById('overall').textContent="Speichern ist in diesem Browser nicht verfügbar. Drucken Sie die Seite oder kopieren Sie Ihre Antworten."}
+}
+function loadAnswers(){try{const data=JSON.parse(localStorage.getItem('lulaA2Worksheet')||'{}');document.querySelectorAll('input,textarea,select').forEach(el=>{if(el.type==="radio"){el.checked=data[el.name]===el.value}else if((el.id||el.name)&&data[el.id||el.name]!==undefined)el.value=data[el.id||el.name]})}catch(e){}}
+function resetAnswers(){if(!confirm("Alle Antworten auf dieser Seite löschen?"))return;document.querySelectorAll('input,textarea,select').forEach(el=>{if(el.type==="radio")el.checked=false;else el.value=""});document.querySelectorAll('.feedback').forEach(el=>{el.textContent="";el.className="feedback"});document.getElementById('overall').textContent="Füllen Sie die Aufgaben aus und klicken Sie auf „Antworten prüfen“.";try{localStorage.removeItem('lulaA2Worksheet')}catch(e){}}
+loadAnswers();
+</script>
+</body>
+</html>
